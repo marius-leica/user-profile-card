@@ -23,6 +23,7 @@
 
 .info {
     padding: 10px 50px;
+    text-align: center;
     transform: translateX(0px);
     opacity: 1;
     transition: transform 1s, opacity 1s;
@@ -33,11 +34,17 @@
     font-weight: 500;
 }
 
+
+
 .info p {
     line-height: 26px;
 }
 
 .info a {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #4f40ff;
     color: #fff;
     font-size: 15px;
@@ -46,6 +53,36 @@
     padding: 12px 40px;
     border-radius: 30px;
     margin-top: 20px;
+}
+
+
+
+.link::before,
+.link::after {
+    content: ' ';
+    background: #333;
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2px;
+    transition: width 0.2s;
+}
+
+.link::before {
+    right: 100%;
+    ;
+}
+
+.link::after {
+    left: 100%;
+    ;
+}
+
+.link:hover::before,
+.link:hover::after {
+    width: 30%;
 }
 
 .info span {
