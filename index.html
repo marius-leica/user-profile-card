@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="user hide-details" id="userBox">
+      <img src="image.png" alt="User-avatar" onclick="openInfo()" />
+      <div class="info">
+        <h1>John Doe</h1>
+        <p>Working as a product manager at <span>Google</span></p>
+        <p>From: California, USA</p>
+        <a href="#">Connect with me</a>
+      </div>
+      <div class="close-icon" onclick="closeInfo()"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
